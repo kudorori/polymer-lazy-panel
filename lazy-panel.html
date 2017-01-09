@@ -1,0 +1,35 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../lazy-styles/lazy-styles.html">
+<link rel="import" href="../paper-material/paper-material.html">
+<!--
+`lazy-panel`
+
+
+@demo demo/index.html 
+-->
+
+<dom-module id="lazy-panel">
+  <template>
+    <style include="lazy-styles-common">
+      :host{
+			margin:6px 0px;
+			display:block;
+		}
+    </style>
+    <paper-material class="panel">
+		<content></content>
+	</paper-material>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'lazy-panel',
+
+      properties: {
+        
+      },
+
+    });
+  </script>
+</dom-module>
